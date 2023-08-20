@@ -15,7 +15,7 @@ export const Layout: React.FC<LayoutProps> = ({ children, className }) => {
       )}
     >
       <NavigationBar />
-      <div className="mx-auto max-w-7xl h-3/4 border-x border-gray-100 dark:border-[#766f6f]">
+      <div className="mx-auto max-w-7xl h-3/4 border-x border-gray-100 dark:border-[#766f6f]  overflow-scroll pb-10">
         {children}
       </div>
       <Footer />
