@@ -18,7 +18,7 @@ export const NavigationBar = () => {
       >
         <div className="flex lg:flex-1">
           <a
-            href="#"
+            href="/"
             className="-m-1.5 p-1.5 flex gap-2 items-center font-extrabold text-3xl justify-center"
           >
             <span className="sr-only">Zarish Iqbal</span>
@@ -48,7 +48,7 @@ export const NavigationBar = () => {
             </a>
           ))}
           <a
-            href="#"
+            href="connect"
             className="border border-[#000000cc] dark:border-white   py-1 px-2  text-sm font-semibold leading-6"
           >
             Connect
@@ -99,7 +99,7 @@ export const NavigationBar = () => {
               </div>
               <div className="py-6">
                 <a
-                  href="#"
+                  href="connect"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-[#767373]"
                 >
                   Connect
