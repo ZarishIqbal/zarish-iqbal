@@ -11,7 +11,7 @@ export const NavigationBar = () => {
   let darkModeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
   let isSystemDarkMode = darkModeMediaQuery.matches;
   return (
-    <header className="bg-[#FFFAFA] dark:bg-[#333333] ">
+    <header className="bg-[#FFFAFA] dark:bg-[#6D6767] ">
       <nav
         className="bg-white dark:bg-neutral-600  mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 border-b border-[#0000004d] shadow-md"
         aria-label="Global"
@@ -19,7 +19,7 @@ export const NavigationBar = () => {
         <div className="flex lg:flex-1">
           <a
             href="#"
-            className="-m-1.5 p-1.5 flex gap-2 items-center font-extrabold text-3xl justify-center dark:text-white "
+            className="-m-1.5 p-1.5 flex gap-2 items-center font-extrabold text-3xl justify-center"
           >
             <span className="sr-only">Zarish Iqbal</span>
             <img
@@ -28,15 +28,13 @@ export const NavigationBar = () => {
               alt=""
             />
             <img className="h-8 w-auto dark:hidden flex" src={Logo} alt="" />
-            <div className="font-poppins text-[#000000cc] dark:text-white ">
-              Zarish
-            </div>
+            <div className="font-poppins">Zarish</div>
           </a>
         </div>
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-white"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 "
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
@@ -45,16 +43,13 @@ export const NavigationBar = () => {
         </div>
         <div className="hidden lg:flex lg:gap-x-12 items-center">
           {navigationItems.map((item) => (
-            <a
-              href={item.url}
-              className="text-sm font-semibold leading-6 text-gray-900 dark:text-white "
-            >
+            <a href={item.url} className="text-sm font-semibold leading-6 ">
               {item.name}
             </a>
           ))}
           <a
             href="#"
-            className="border border-[#000000cc] dark:border-white dark:text-white   py-1 px-2 text-[#000000cc] text-sm font-semibold leading-6 text-gray-900"
+            className="border border-[#000000cc] dark:border-white   py-1 px-2  text-sm font-semibold leading-6"
           >
             Connect
           </a>

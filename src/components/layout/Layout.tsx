@@ -1,10 +1,23 @@
+import clsx from "clsx";
+import React from "react";
 import { Footer } from "../footer/Footer";
 import { NavigationBar } from "../navigation/NavigationBar";
-
-export const Layout = () => {
+type LayoutProps = {
+  children: JSX.Element;
+  className?: string;
+};
+export const Layout: React.FC<LayoutProps> = ({ children, className }) => {
   return (
-    <div className="bg-[#FFFAFA] dark:bg-[#000000cc] w-full h-screen">
+    <div
+      className={clsx(
+        "bg-[#FFFAFA]  dark:bg-[#484141cc] w-full h-screen dark:text-white text-primary",
+        className
+      )}
+    >
       <NavigationBar />
+      <div className="mx-auto max-w-7xl h-3/4 border-x border-gray-100 dark:border-[#766f6f]">
+        {children}
+      </div>
       <Footer />
     </div>
   );
