@@ -11,6 +11,9 @@ module.exports = {
       boxShadow: {
         footer: "rgb(0 0 0 / 0.1) 0px -3px 3px;",
       },
+      colors: {
+        primary: "#000000cc",
+      },
     },
   },
   plugins: [],
