@@ -2,6 +2,7 @@ import { useState } from "react";
 import { BoltIcon } from "../assets/bolt";
 import RedDot from "../assets/redDot.png";
 import { Layout } from "../components/layout/Layout";
+
 export const Home = () => {
   const [fade, setFade] = useState(true);
   const [intervalObj, setIntervalObj] = useState<NodeJS.Timeout>();

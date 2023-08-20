@@ -8,8 +8,6 @@ import { navigationItems } from "./navigationItems";
 
 export const NavigationBar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  let darkModeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-  let isSystemDarkMode = darkModeMediaQuery.matches;
   return (
     <header className="bg-[#FFFAFA] dark:bg-[#6D6767] ">
       <nav
