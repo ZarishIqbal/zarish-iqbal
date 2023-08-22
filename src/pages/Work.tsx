@@ -55,6 +55,7 @@ export const Work = () => {
           images={[mischool2, mischool1]}
           description="MISchool is a management software system for schools. MISchool enables school to collect, organize, and store records giving your school full control of all academic, finance, wellbeing, and administrative information. The app supports offline support as a PWA. The frontend is built using ReactJS, typescript and Tailwind CSS while the backend is developed using Elixir."
           title="MISchool"
+          link="https://mischool.pk/"
           tags={["React JS", "PWA", "Elixir"]}
         />
       </div>
