@@ -3,9 +3,9 @@ import { UpworkIcon } from "../../assets/upwork";
 export const Footer = () => {
   return (
     <div className="absolute bottom-0 w-screen">
-      <footer className="bg-white text-center text-white dark:bg-neutral-600  mx-auto  max-w-7xl p-6 lg:px-8 shadow-footer border-t border-[#0000004d]">
-        <div className="container pt-3">
-          <div className="mb-4 flex justify-center">
+      <footer className="bg-white text-center text-white dark:bg-neutral-600  mx-auto  max-w-7xl px-6 py-2 lg:px-8 shadow-footer border-t border-[#0000004d]">
+        <div className="container pt-2">
+          <div className=" flex justify-center">
             <a
               href="https://www.linkedin.com/in/zarish-iqbal-799242194/"
               className="mr-9 text-neutral-800 dark:text-neutral-200"
